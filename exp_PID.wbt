@@ -1,0 +1,511 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  ERP 1
+  basicTimeStep 4
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.5819485209897316 0.5692583255004238 0.5807588809190244 4.178370257068173
+  position 4.8196579523140635 61.559457804839205 1.7977459652659464
+  follow "rectangle arena"
+  followType "Mounted Shot"
+  bloomThreshold -1
+}
+Background {
+  skyColor [
+    1 1 1
+    0 0 0
+  ]
+}
+RectangleArena {
+  floorSize 45 45
+  floorTileSize 45 45
+  floorAppearance Appearance {
+    texture ImageTexture {
+      url [
+        "textures/texture_grid.png"
+      ]
+      filtering 1
+    }
+  }
+  wallThickness 0.09
+  wallHeight 0.7999999999999999
+  wallAppearance Appearance {
+    material Material {
+    }
+    texture ImageTexture {
+    }
+    textureTransform TextureTransform {
+    }
+  }
+  wallColor 0 0 0
+}
+DEF Tracer Robot {
+  translation 2.24607 0.0894225 -16.6811
+  rotation -0.011711504824420665 -0.9997914118526543 0.016732406892723935 1.14159
+  children [
+    Pen {
+      inkColor 0 0 0.498
+      leadSize 0.1
+    }
+    Solid {
+      translation 0 0.55 0.3425
+      children [
+        DEF box Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "C:/Users/User/Downloads/nchu_electrical_enginnering.png"
+              ]
+            }
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.001
+          }
+        }
+      ]
+      name "solid(10)"
+      boundingObject USE box
+      physics Physics {
+      }
+    }
+    Solid {
+      translation 0 0.4325 0
+      children [
+        DEF box Shape {
+          appearance PBRAppearance {
+            baseColor 0.333333 0.666667 1
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.57 0.56 0.685
+          }
+        }
+      ]
+      name "solid(9)"
+      boundingObject USE box
+      physics Physics {
+        density 345
+      }
+    }
+    Solid {
+      translation 0.2075 0.1075 -0.24
+      children [
+        DEF back Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.154 0.09 0.005
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE back
+      physics Physics {
+      }
+    }
+    Solid {
+      translation -0.2075 0.1075 -0.24
+      children [
+        DEF back Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.154 0.09 0.005
+          }
+        }
+      ]
+      name "solid(14)"
+      boundingObject USE back
+      physics Physics {
+      }
+    }
+    Solid {
+      translation 0.28 0.1075 0.115
+      children [
+        DEF side Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.09 0.191
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject USE side
+      physics Physics {
+      }
+    }
+    Solid {
+      translation -0.28 0.1075 0.092
+      children [
+        DEF side Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.09 0.217
+          }
+        }
+      ]
+      name "solid(8)"
+      boundingObject USE side
+      physics Physics {
+      }
+    }
+    Solid {
+      translation 0.28 0.1075 -0.222
+      children [
+        DEF side Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.09 0.027
+          }
+        }
+      ]
+      name "solid(13)"
+      boundingObject USE side
+      physics Physics {
+      }
+    }
+    Solid {
+      translation 0.28 0.15 -0.0919
+      children [
+        DEF side Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.24
+          }
+        }
+      ]
+      name "solid(7)"
+      boundingObject USE side
+      physics Physics {
+      }
+    }
+    Solid {
+      translation -0.28 0.15 -0.1219
+      children [
+        DEF side Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.24
+          }
+        }
+      ]
+      name "solid(6)"
+      boundingObject USE side
+      physics Physics {
+      }
+    }
+    Solid {
+      translation 0.28 0.0875 -0.0943
+      children [
+        DEF side Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.045 0.229
+          }
+        }
+      ]
+      name "solid(12)"
+      boundingObject USE side
+      physics Physics {
+      }
+    }
+    Solid {
+      translation -0.28 0.0875 -0.1263
+      children [
+        DEF side Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.045 0.222
+          }
+        }
+      ]
+      name "solid(15)"
+      boundingObject USE side
+      physics Physics {
+      }
+    }
+    Lidar {
+      translation 0 0.12 0.2075
+      rotation 0 1 0 3.14
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.4
+              emissiveColor 1 1 1
+            }
+          }
+          geometry Cylinder {
+            height 0.07
+            radius 0.05
+          }
+        }
+      ]
+      name "vlp16"
+      boundingObject Cylinder {
+        height 0.07
+        radius 0.05
+      }
+      physics Physics {
+      }
+      horizontalResolution 4000
+      fieldOfView 6.28
+      verticalFieldOfView 0.0349066
+      numberOfLayers 16
+      near 3e-05
+      minRange 0.0001
+      maxRange 10
+    }
+    Transform {
+      children [
+        DEF body Shape {
+          appearance PBRAppearance {
+            baseColor 0.333333 0.666667 1
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.57 0.129 0.685
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 6849.884852990954
+        anchor 0.17 -0.0625 0
+      }
+      device [
+        RotationalMotor {
+          name "left_motor"
+          maxVelocity 50
+        }
+      ]
+      endPoint Solid {
+        translation 0.17018612093909624 -0.06219221054790689 4.565199756347047e-05
+        rotation 0.34008266838163004 -0.33834667042606253 0.8774196882211087 1.6981444008257105
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0.498039
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.0515
+              radius 0.03
+            }
+          }
+        ]
+        name "leftWheel"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 4109.969912187674
+        anchor -0.17 -0.0625 0
+      }
+      device [
+        RotationalMotor {
+          name "right_motor"
+          maxVelocity 50
+        }
+      ]
+      endPoint Solid {
+        translation -0.17019515628062099 -0.062156619438421476 3.0170769274828128e-05
+        rotation -0.5003908298538638 0.5018942890343041 0.7054864563072151 1.9116314618755548
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0.498039
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.0515
+              radius 0.03
+            }
+          }
+        ]
+        name "rightWheel"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters {
+        position 295.1998207064971
+        anchor 0.17 -0.0625 0.17
+      }
+      jointParameters2 JointParameters {
+        position -4.314153674770851
+        axis 0 1 0
+      }
+      jointParameters3 JointParameters {
+        position 157.75715904737868
+      }
+      endPoint Solid {
+        translation 0.1702435572754777 -0.06255808198157262 0.17028698524555605
+        rotation 0.9160956346227291 0.19350789326795406 -0.35117443453101344 4.684855081206308
+        children [
+          DEF caster Shape {
+            appearance PBRAppearance {
+              roughness 1
+              metalness 0
+            }
+            geometry Sphere {
+              radius 0.03
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE caster
+        physics Physics {
+        }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters {
+        position 382.3399483099584
+        anchor -0.17 -0.0625 0.17
+      }
+      jointParameters2 JointParameters {
+        position 6.929900006312136
+        axis 0 1 0
+      }
+      jointParameters3 JointParameters {
+        position 21.910417964549694
+      }
+      endPoint Solid {
+        translation -0.17027202016272763 -0.06229405991385474 0.17038369970457484
+        rotation -0.9224652758731222 -0.385867172309411 0.012819521920251434 1.9410104307749547
+        children [
+          DEF caster Shape {
+            appearance PBRAppearance {
+              roughness 1
+              metalness 0
+            }
+            geometry Sphere {
+              radius 0.03
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE caster
+        physics Physics {
+        }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters {
+        position 972.5446174071628
+        anchor 0.17 -0.0625 -0.17
+      }
+      jointParameters2 JointParameters {
+        position 16.785733181109574
+        axis 0 1 0
+      }
+      jointParameters3 JointParameters {
+        position 232.7640769438652
+      }
+      endPoint Solid {
+        translation 0.1702510163144602 -0.06254879201410131 -0.1698650464168276
+        rotation 0.6172658608745073 0.4621901731490652 0.636681318120212 3.841712630276086
+        children [
+          DEF caster Shape {
+            appearance PBRAppearance {
+              roughness 1
+              metalness 0
+            }
+            geometry Sphere {
+              radius 0.03
+            }
+          }
+        ]
+        name "solid(4)"
+        boundingObject USE caster
+        physics Physics {
+        }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters {
+        position 195.21086383384628
+        anchor -0.17 -0.0625 -0.17
+      }
+      jointParameters2 JointParameters {
+        position 3.9311200128504504
+        axis 0 1 0
+      }
+      jointParameters3 JointParameters {
+        position -95.30023276144694
+      }
+      endPoint Solid {
+        translation -0.1695424634721484 -0.06248465360098126 -0.16995685934882876
+        rotation -0.7807620281324068 0.5201983539530274 0.34612761804157105 4.14318581451641
+        children [
+          DEF caster Shape {
+            appearance PBRAppearance {
+              roughness 1
+              metalness 0
+            }
+            geometry Sphere {
+              radius 0.03
+            }
+          }
+        ]
+        name "solid(5)"
+        boundingObject USE caster
+        physics Physics {
+        }
+      }
+    }
+  ]
+  boundingObject USE body
+  physics Physics {
+  }
+  controller "seek_PID"
+  supervisor TRUE
+}
